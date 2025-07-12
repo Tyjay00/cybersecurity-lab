@@ -141,10 +141,19 @@ const App = () => {
 
                 {/* Introduction */}
                 <section ref={addToRefs} className="bg-white p-6 rounded-lg shadow-lg mb-8 border border-gray-200">
-                    <h2 className="text-2xl font-semibold text-blue-700 mb-4">Introduction: What is My Cybersecurity Lab? </h2>
+                    <h2 className="text-2xl font-semibold text-blue-700 mb-4">Cybersecurity Lab </h2>
                     <p className="mb-4">
                         My cybersecurity lab is a safe, controlled environment where I can learn about and practice cybersecurity concepts. I built it using <strong className="font-bold text-blue-600">VirtualBox</strong>, a free program that allows me to run different operating systems as "virtual machines" (VMs) right on my main computer. This setup lets me experiment with security tools and scenarios without affecting my primary system.
                     </p>
+
+                    <div className="my-6 flex justify-center">
+                        <ZoomableImage
+                            src="/architecture.png"
+                            alt="VirtualBox Manager showing VMs"
+                            className="rounded-lg shadow-lg max-w-full h-auto border border-gray-300"
+                            onClick={handleImageClick}
+                        />
+                    </div>
                     <p className="mb-4">
                         In this project, I set up three key virtual machines and a powerful security monitoring platform:
                     </p>
